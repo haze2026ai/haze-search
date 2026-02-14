@@ -1,0 +1,35 @@
+{
+  "name": "haze-search",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted search microservice (Node/TypeScript + SQLite FTS5)",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsup src/main.ts --format esm --sourcemap",
+    "start": "node dist/main.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.19.2",
+    "p-limit": "^5.0.0",
+    "better-sqlite3": "^9.6.0",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
+    "tsup": "^8.3.6",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8",
+    "supertest": "^7.0.0"
+  }
+}
