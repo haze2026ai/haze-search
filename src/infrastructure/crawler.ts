@@ -51,7 +51,9 @@ function extractLinks(html: string, baseUrl: string) {
       const u = new URL(href, baseUrl);
       const norm = normalizeUrl(u.toString());
       if (norm) links.add(norm);
-    } catch {}
+    } catch {
+      // ignore invalid or non-standard URLs
+    }
   });
   return [...links];
 }

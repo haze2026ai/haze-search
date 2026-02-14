@@ -41,5 +41,5 @@ export function search(db: Database.Database, query: string, limit = 10): Search
     ORDER BY rank
     LIMIT ?
   `);
-  return stmt.all(query, limit);
+  return stmt.all(query, limit) as SearchResult[];
 }
