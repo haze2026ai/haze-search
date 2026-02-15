@@ -21,7 +21,7 @@
     "express": "^5.2.1",
     "p-limit": "^5.0.0",
     "undici": "^6.19.8",
-    "zod": "^3.23.8"
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
