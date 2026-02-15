@@ -31,7 +31,7 @@
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^8.23.0",
     "@typescript-eslint/parser": "^8.23.0",
-    "eslint": "^9.19.0",
+    "eslint": "^9.39.2",
     "globals": "^17.3.0",
     "madge": "^6.1.0",
     "supertest": "^7.0.0",
